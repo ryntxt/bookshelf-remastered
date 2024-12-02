@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-image: url(gambar\ perpustakaan.jpg);
+  backdrop-filter: blur(4px);
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #ce7b3c, #d35555);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin-left: 375px;
+  margin-top: 20px;
+  padding: 16px;
+  background: linear-gradient(90deg, #ce7b3c, #d35555);
+
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #d07d7d;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.input_section > form > .input {
+  margin: 12px 0;
+}
+
+.input_section > form > button {
+  background: linear-gradient(90deg, #ce7b3c, #d35555);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.input_section > form > button:hover {
+  background: linear-gradient(90deg, #d35555, #ce7b3c);
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #b0b0b0; /* Light gray */
+  transition: border-color 0.3s;
+}
+
+.input_section > form > .input > input:focus {
+  border-color: #7d7d7d; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.input_section > form > .input > label {
+  color: #555; /* Medium gray */
+  font-weight: bold;
+}
+
+.search_section {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #b0b0b0; /* Light gray */
+  border-radius: 10px;
+  background-color: #ffffff; /* White for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search_section > h2 {
+  color: #333; /* Darker gray */
+  margin-bottom: 16px; /* Spacing below the title */
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+}
+
+.search_section > form > input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b0b0b0; /* Light gray */
+  transition: border-color 0.3s;
+}
+
+.search_section > form > input:focus {
+  border-color: #7d7d7d; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.search_section > form > button {
+  background: linear-gradient(90deg, #ce7b3c, #d35555);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search_section > form > button:hover {
+  background: linear-gradient(90deg, #d35555, #ce7b3c);
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.book_shelf {
+  margin: 20px 0;
+  border: 1px solid #b0b0b0; /* Light gray */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* White for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book_shelf > h2 {
+  color: #333; /* Darker gray */
+  margin-bottom: 16px; /* Spacing below the title */
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 12px;
+  border: 1px solid #b0b0b0; /* Light gray */
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: #f9f9f9; /* Very light gray for contrast */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book_shelf > .book_list > .book_item:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+  text-transform: capitalize;
+  color: #444; /* Dark gray */
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: none;
+  padding: 8px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .blue {
+  background-color: #2196f3; /* Blue */
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .yellow {
+  background-color: #ffeb3b; /* Yellow */
+  color: black; /* Black text for contrast */
+}
+
+.book_shelf > .book_list > .book_item > .action > button:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
